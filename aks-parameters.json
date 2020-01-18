@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "demoaks18"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "demoaks18-dns"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": "93050836-d70d-49f5-83bd-81ac6e0eba1f"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "589eabae-fbf2-4377-8b0d-00efd31312a5"
+        },
+        "kubernetesVersion": {
+            "value": "1.14.8"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        //"aadSessionKey": {
+           // "value": null
+        //},
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-29cf01e8-f74a-4feb-bbd4-dc3760a344f7-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/29cf01e8-f74a-4feb-bbd4-dc3760a344f7/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-29cf01e8-f74a-4feb-bbd4-dc3760a344f7-EUS"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "principalId": {
+            "value": "e39e79e4-825b-4ab3-bcd6-3aed4a0a4828"
+        }
+    }
+}
